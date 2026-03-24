@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Jay Ma Meldi Enterprises</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">JMM</div>
+<div class="menu-toggle" id="menu-toggle">☰</div>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero small-hero">
+<div class="hero-content">
+<h1>CONTACT US</h1>
+</div>
+</section>
+
+<section class="contact reveal">
+<div class="contact-container">
+
+<div class="contact-info">
+<p><strong>Phone:</strong> +91 9601787375</p>
+<p><strong>Email:</strong> panchalmaulik1992@gmail.com</p>
+<p><strong>Location:</strong> Ahmedabad, Gujarat</p>
+</div>
+
+<form class="contact-form-main">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+<div class="form-message"></div>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Jay Ma Meldi Enterprises</p>
+ <div class="footer-links">
+    <a href="#" onclick="openPrivacy()">Privacy Policy</a> |
+    <a href="#" onclick="openTerms()">Terms & Conditions</a>
+  </div>
+</footer>
+<!-- Privacy Modal -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+    <h2>Privacy Policy</h2>
+    <p>We collect basic contact information only for communication purposes.</p>
+  </div>
+</div>
+
+<!-- Terms Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('termsModal')">&times;</span>
+    <h2>Terms & Conditions</h2>
+    <p>By using this website, you agree to our service terms.</p>
+  </div>
+</div>
+<script src="js/script.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
