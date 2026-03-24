@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+</head>
+<body>
+
+<h2>All Inquiries</h2>
+<div id="data"></div>
+
+<script>
+fetch("/admin/inquiries")
+.then(res => res.json())
+.then(data => {
+  const container = document.getElementById("data");
+  data.forEach(item => {
+    container.innerHTML += `
+      <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+        <p><b>Name:</b> ${item.name}</p>
+        <p><b>Email:</b> ${item.email}</p>
+        <p><b>Message:</b> ${item.message}</p>
+        <p><b>Date:</b> ${new Date(item.date).toLocaleString()}</p>
+      </div>
+    `;
+  });
+});
+</script>
+
+</body>
+</html>
